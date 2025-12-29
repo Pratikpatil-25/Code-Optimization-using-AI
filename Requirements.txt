@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-pydantic
-google-generativeai
+fastapi # API framework
+uvicorn # Web Server Runtime to run and host the app locally
+pydantic # for Data Validation
+google-generativeai # API Client
