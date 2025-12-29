@@ -1,4 +1,6 @@
-fastapi # API framework
-uvicorn # Web Server Runtime to run and host the app locally
-pydantic # for Data Validation
-google-generativeai # API Client
+fastapi>=0.115.0            # API framework - The web framework that creates your endpoint for the Java Servlet.
+uvicorn[standard]>=0.30.0   # Web Server Runtime to run and host the app locally
+google-genai>=1.0.0         # API Client - The official Google SDK required to talk to Gemini 2.5 Flash.
+slowapi>=0.1.9              # Handles the Rate Limiting logic we added to protect your API quota.
+pydantic>=2.0.0             # for Data Validation - Powers the AnalysisReport schema to ensure Gemini returns valid JSON.
+python-dotenv>=1.0.0        # Allows you to store your GEMINI_API_KEY in a .env file for security.
