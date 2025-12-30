@@ -3,6 +3,8 @@
 This platform is a comprehensive ecosystem designed not just to optimize code, but to facilitate a deep understanding of software engineering principles. It bridges the gap between Java-based enterprise logic and cutting-edge Generative AI to provide a personalized learning journey.
 
 **🌟 Key Pillars**
+
+
 --**Code Optimization:** Instant AI-driven refactoring with a focus on performance and readability.
 
 
@@ -17,7 +19,9 @@ This platform is a comprehensive ecosystem designed not just to optimize code, b
 
 
 ## ✨ Advanced Features
+
 **📈 1. Learning Journey Tracking**
+
 --The system maintains a comprehensive history of every code submission.
 
 
@@ -29,6 +33,7 @@ This platform is a comprehensive ecosystem designed not just to optimize code, b
 
 
 **🏆 2. Gamified Achievement System**
+
 To add a sense of accomplishment, the platform implements a competitive layer:
 
 
@@ -40,6 +45,7 @@ To add a sense of accomplishment, the platform implements a competitive layer:
 
 
 🎯 3. Domain-Specific Challenges
+
 Users aren't just given random problems. They choose their own focus:
 
 
@@ -51,6 +57,7 @@ Users aren't just given random problems. They choose their own focus:
 
 
 ## 🛡️ Security & Privacy
+
 --**Credential Safety:** Uses **python-dotenv** to ensure API keys are never pushed to version control.
 
 --**Rate Limiting:** Implements **Slowapi** to prevent abuse of the AI endpoints.
@@ -59,4 +66,5 @@ Users aren't just given random problems. They choose their own focus:
 
 
 ## 👨‍💻 Author
+
 --**Pratik Anil Patil**
