@@ -11,13 +11,15 @@ Gamification: A point-based system with regional leaderboards to drive motivatio
 
 Personalized Paths: Tailored challenges based on specific domains like Data Structures (DSA) or Machine Learning.
 
-**##✨ Advanced Features**
+
+## ✨ Advanced Features
 📈 1. Learning Journey Tracking
 The system maintains a comprehensive history of every code submission.
 
 Quality Metrics: Tracks improvements in time/space complexity and code cleanliness over time.
 
 Progress Visualization: Generates reports for users to see their growth from "Beginner" to "Efficient Developer."
+
 
 🏆 2. Gamified Achievement System
 To add a sense of accomplishment, the platform implements a competitive layer:
@@ -26,6 +28,7 @@ Point Allocation: Users earn points based on the difficulty of challenges solved
 
 Regional Leaderboards: Compare your rank against other developers in your specific region or college.
 
+
 🎯 3. Domain-Specific Challenges
 Users aren't just given random problems. They choose their own focus:
 
@@ -33,10 +36,12 @@ Skill Selection: Choose from categories like DSA, ML Algorithms, System Design, 
 
 Smart Referrals: Based on your chosen skill, the AI suggests specific coding challenges designed to strengthen your weak points.
 
-##🛡️ Security & Privacy
+
+## 🛡️ Security & Privacy
 Credential Safety: Uses python-dotenv to ensure API keys are never pushed to version control.
 
 Rate Limiting: Implements Slowapi to prevent abuse of the AI endpoints.
 
-##👨‍💻 Author
+
+## 👨‍💻 Author
 Pratik Anil Patil
