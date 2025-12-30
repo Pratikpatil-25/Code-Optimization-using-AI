@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-load_dotenv
+load_dotenv()
 
 import os
 from fastapi import FastAPI, HTTPException, Request
@@ -15,7 +15,7 @@ from slowapi.errors import RateLimitExceeded
 
 # 1. Initialize Rate Limiter (Tracks by Client IP)
 limiter = Limiter(key_func=get_remote_address)
-app = FastAPI()
+app = FastAPI(debug=True)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
@@ -40,8 +40,8 @@ class CodeInput(BaseModel):
     code: str
     language: str
 
-client = genai.Client(api_key="AIzaSyCOF3bHO-WVdd1TfoLafViOP84irQYdmAc").aio
-# client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY")).aio
+
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY")).aio
 
 @app.post("/analyze", response_model=AnalysisReport)
 @limiter.limit("5/minute") # Limit: 5 requests per minute per user/IP
@@ -59,4 +59,6 @@ async def analyze_code(input_data: CodeInput, request: Request):
         )
         return response.parsed
     except Exception as e:
+        # ADD THIS LINE: It will print the real error to your VS Code terminal
+        print(f"DEBUG ERROR: {e}")
         raise HTTPException(status_code=500, detail="AI Analysis Service is currently unavailable.")
