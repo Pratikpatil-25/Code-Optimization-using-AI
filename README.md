@@ -11,7 +11,7 @@ Gamification: A point-based system with regional leaderboards to drive motivatio
 
 Personalized Paths: Tailored challenges based on specific domains like Data Structures (DSA) or Machine Learning.
 
-##✨ Advanced Features
+**##✨ Advanced Features**
 📈 1. Learning Journey Tracking
 The system maintains a comprehensive history of every code submission.
 
